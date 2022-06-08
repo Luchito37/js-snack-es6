@@ -67,7 +67,9 @@ console.log("\n--------nuovo array con i studenti con voti superiore a 70 e id s
 
 
 const mapGradesId = listaStudents.map((student, indice, arrayOrginale) => {
-    return student.id > 120  && student.grades > 70;
+    if (student.id > 120  && student.grades > 70){
+        return student;
+    };
     
 });
 
